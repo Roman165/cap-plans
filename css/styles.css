@@ -328,7 +328,7 @@ body {
   min-height: 100%;
   background-color: #fdde7e; }
 
-.section {
+.conteiner {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -342,52 +342,50 @@ body {
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center; }
-  .section__content {
-    text-align: center;
-    -ms-flex-preferred-size: 30%;
-    flex-basis: 30%;
-    height: 80%;
-    background-color: #fff;
-    min-width: 300px;
-    -webkit-box-shadow: 5 9 10px rgba(0, 0, 0, 0.5);
-    box-shadow: 5 9 10px rgba(0, 0, 0, 0.5); }
-    .section__content--height {
-      height: 90%; }
-  .section__price {
-    margin-top: 60px;
+
+.card {
+  text-align: center;
+  -ms-flex-preferred-size: 27%;
+  flex-basis: 27%;
+  height: 75%;
+  background-color: #fff;
+  min-width: 300px;
+  -webkit-box-shadow: 5 9 10px rgba(0, 0, 0, 0.5);
+  box-shadow: 5 9 10px rgba(0, 0, 0, 0.5); }
+  .card--height {
+    height: 85%; }
+  .card__price {
+    margin: 8rem auto 0;
     font-size: 70px;
     letter-spacing: 2px;
-    line-height: 24px;
+    line-height: 6rem;
     color: #02995b;
     font-family: "Miso";
     font-weight: bold;
-    text-align: center; }
-    .section__price--indent {
+    text-align: center;
+    max-width: 225px;
+    white-space: nowrap;
+    overflow: hidden; }
+    .card__price--indent {
       margin-top: 80px; }
-    .section__price::before {
+    .card__price::before {
       content: attr(data-currency);
       margin-right: .5rem; }
-  .section__steam {
+  .card__cap {
     display: block;
-    margin: 0 auto;
-    padding-top: 70px; }
-    .section__steam--indent {
-      padding-top: 100px; }
-  .section__cap {
-    display: block;
-    margin: 0 auto;
-    padding: 10px; }
-  .section__logo {
-    position: relative;
-    top: -65px;
-    left: -7px; }
-  .section__name {
+    margin: 5.5rem auto;
+    padding: 4rem; }
+    .card__cap--height {
+      padding: 8.5rem; }
+  .card__name {
     font-size: 56px;
     line-height: 24px;
     font-family: "Miso"; }
-  .section__about {
+  .card__about {
     color: #333333;
     font-family: "Miso";
-    font-size: 20px;
+    font-size: 3rem;
     padding: 35px;
-    text-align: center; }
+    text-align: center;
+    max-height: 18rem;
+    overflow: hidden; }
